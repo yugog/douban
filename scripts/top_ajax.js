@@ -1,6 +1,6 @@
 
 $.ajax({
-	url:"http://api.douban.com/v2/movie/top250",
+	url:"https://api.douban.com/v2/movie/top250",
 	type:"get",
 	dataType:"jsonp",
 	success:function(result){

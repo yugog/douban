@@ -1,5 +1,5 @@
    $.ajax({
-    url:"http://api.douban.com/v2/movie/in_theaters",
+    url:"https://api.douban.com/v2/movie/in_theaters",
     // ?start=0&count=10
     type:"get",
     dataType:"jsonp",

@@ -21,7 +21,7 @@ myBtn.onclick=function(){                               //按钮绑定点击事�
 
       }else{ alert("xxxx") }
       $.ajax({
-          url:"http://api.douban.com/v2/movie/search?q="+searchValue,
+          url:"https://api.douban.com/v2/movie/search?q="+searchValue,
     // ?start=0&count=10
           type:"get",
           dataType:"jsonp",

@@ -1,6 +1,6 @@
 
 $.ajax({
-	url:"http://api.douban.com/v2/movie/coming_soon",
+	url:"https://api.douban.com/v2/movie/coming_soon",
 	type:"get",
 	dataType:"jsonp",
 	success:function(result){
