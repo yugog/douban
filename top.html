@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>豆瓣电影</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="scripts/jquery-1.4.2.js"></script>
+    <link rel="stylesheet" href="css1.css">
+    
+</head>
+<body>
+<div class="_top">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar" href="index.html">Movie</a>
+            </div>
+            <form id="myForm"  class="navbar-form navbar-right" role="search" method="get">
+                <div class="form-group">
+                    <input type="text" name="fname" class="form-control" placeholder="Search">
+                </div>
+                <div class="my_btn_box">
+                    <span id="myBtn"><span class="glyphicon glyphicon-search"></span></span>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+</div>
+<div class="list_box" id="list_all_box">
+    <div class ="list_box_left">
+        <ul class="nav nav-pills nav-stacked" id="left_url">
+            <li title="in_theaters" ><a href="index.html">正在上映</a></li>
+            <li title="coming_soon"><a href="future.html" >即将上映</a></li>
+            <li class="active" title="top250"><a href="top.html" >Top250</a></li>
+        </ul>
+    </div>
+    <div id ="list_box_right">
+     <h2 id="_Title">loading...</h2>
+
+    <!-- <div id="movie_list_allbox"> -->
+     <!-- <a href=""> -->
+      <!-- <div class="movie_list_box">
+       <div class="movie_img_box"><img src="" alt=""></div>
+       
+       <div class="movie_text">
+         <h3>h3 <span id="movie_rating">5</span></h3> 
+         <div class="movie_content">
+           <span id="movie_genres">1</span>
+           <span id="movie_year">2</span>
+           <span id="movie_directors">3</span>
+           <span id="movie_casts">4</span>
+           
+              </div> 
+              </div>
+                
+         </div> -->
+         <!-- </a> -->
+          <!-- </div> -->
+
+         <!-- 分页  -->
+     <div id="pageDiv" name="pageDiv" >
+         <ul class="pagination">
+            <li><a href="#" >首页</a></li>
+            <li><a href="#" >上一页</a></li>
+            <li style="display: none;"><a href="#" >1</a></li>
+            <li style="display: none;"><a href="#" >2</a></li>
+            <li style="display: none;"><a href="#" >3</a></li>
+            <li style="display: none;"><a href="#" >4</a></li>
+            <li style="display: none;"><a href="#" >5</a></li>
+            <li style="display: none;"><a href="#" >6</a></li>
+            <li style="display: none;"><a href="#" >7</a></li>
+            
+            <li ><a href="#" >下一页</a></li>
+            <li><a href="#" >尾页</a></li>
+               </ul>
+                 </div>
+     
+      </div>
+ </div>
+
+<script src="scripts/share.js"></script>
+<script src="scripts/top_ajax.js"></script>
+<script src="scripts/search.js"></script>
+ </body> 
+
+</html>
